@@ -603,6 +603,7 @@ color:var(--discription-text-color);
   align-items: center;
   gap: 10px;
 }
+
 .footer-social {
   width: 44px;
   height: 44px;
@@ -620,10 +621,7 @@ color:var(--discription-text-color);
 .footer-social:focus {
   background-color: var(--accent-color);
 }
-.footer .mail-box{
-  display: flex;
 
-}
 .footer .mail-form{
   margin-left: auto;
 }
@@ -645,6 +643,10 @@ border-radius: 4px;
 padding-left: 15px;
 background-color: var(--background-color-dark);
 
+
+}
+.mail-box{
+  display: flex;
 }
 .mail-input::placeholder{
 font-weight: 400;
@@ -659,8 +661,11 @@ outline: none;
 
 }
 .btn-footer{
-margin-left: 12px ;
+margin-left: 12px;
 width: 200px;
+height: 50px;
+
+padding: 10px 28px;
 
 font-weight: 700;
 font-size: 16px;
@@ -676,13 +681,20 @@ border-radius: 4px;
 border: none;
 cursor: pointer;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: flex;
 
+}
+.icon-icon-send {
+  margin-left: 10px;
+}
+footer label{
+  margin-top: 0;
 }
 .btn-footer:hover,
 .btn-footer:focus {
   background-color: var(--button-color-active);
   color: var(--discription-text-color);
-  cursor: pointer;}
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
 
 /*modal*/
 
@@ -766,13 +778,14 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .btn-submit:hover,
 .btn-submit:focus {
   background-color: var(--button-color-active);
-  cursor: pointer;}
+  }
 
 .accept-link {
 font-weight: 400;
@@ -797,8 +810,9 @@ color: var(--accent-color);
   padding-left: 42px;
   width: 100%;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-wrap{
+.input-wrap{ 
   position: relative;
 }
 .form-element svg {
@@ -811,7 +825,9 @@ color: var(--accent-color);
 
 .form-element svg{
   fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-element input:focus+svg{
   fill: var(--accent-color);
 }
@@ -879,6 +895,4 @@ color: #757575;
 .close-button:focus{
   fill: var(--accent-color);
   }
-
-
 
