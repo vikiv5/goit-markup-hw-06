@@ -577,7 +577,6 @@ color:var(--discription-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--discription-text-color);
   margin-bottom: 20px;
@@ -598,6 +597,9 @@ color:var(--discription-text-color);
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.footer-box {
+  margin-right: 93px;
 }
 .footer-social-item {
   display: flex;
@@ -622,6 +624,64 @@ color:var(--discription-text-color);
 .footer-social:focus {
   background-color: var(--accent-color);
 }
+.footer .mail-box{
+  display: flex;
+
+}
+.footer .mail-form{
+  margin-left: auto;
+}
+.mail-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--discription-text-color);
+margin-bottom: 20px;
+}
+.mail-input{
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 15px;
+background-color: var(--background-color-dark);
+
+}
+.mail-input::placeholder{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.6);
+
+}
+.btn-footer{
+  margin-left: 12px ;
+  width: 200px;
+  
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+background: var(--button-color-active);
+color: var(--discription-text-color);
+border-radius: 4px;
+border: none;
+cursor: pointer;
+
+}
+
 /*modal*/
 
 .backdrop {
@@ -637,6 +697,7 @@ color:var(--discription-text-color);
 }
 .modal{
 position: absolute;
+padding: 40px;
 width: 528px;
 height: 581px;
 left: 50%;
@@ -646,11 +707,138 @@ transform: translate(-50% , -50%);
 
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.modal-title{
+  text-align: center;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+
+}
 .is-hidden{
   opacity:0;
   visibility: hidden;
   pointer-events: none;
   
+}
+textarea{
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+textarea:focus{
+  border: 1px solid var(--accent-color);
+}
+.btn-submit{
+margin-left:165px;
+margin-right:163px;
+padding: 10px 52px;
+width: 200px;
+height: 50px;
+background: var(--button-color-active);
+color: var(--discription-text-color);
+border-radius: 4px;
+border: none;
+cursor: pointer;
+
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+
+justify-content: center;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+}
+.accept-link {
+  font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+text-decoration-line: underline;
+
+color: var(--accent-color);
+
+}
+.form-element{
+  display: flex;
+  flex-direction: column;
+
+}
+.form-element input {
+  height: 40px;
+  border: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  
+  padding-left: 42px;
+  width: 100%;
+  outline: none;
+}
+.input-wrap{
+  position: relative;
+}
+.form-element svg {
+  position:absolute;
+  top:50%;
+  left: 12px;
+  transform:translateY(-50%);
+}
+.btn-footer svg {
+
+}
+.form-element svg{
+  fill: var(--primary-text-color);
+}
+.form-element input:focus+svg{
+  fill: var(--accent-color);
+}
+.form-element input:focus{
+  border: 1px solid var(--accent-color);
+}
+.comment-text{
+  margin-bottom: 3px;
+}
+.checkbox {
+  width: 16px;
+  height: 15px;
+  border:  2px solid var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+}
+.accept label{
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.accept-text{
+height: 24px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: #757575;
+}
+
+label {
+margin-bottom: 4px;
+margin-top:10px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.66;
+letter-spacing: 0.01em;
+color: #757575;
+
+}
+.accept input:checked + label .checkbox{
+  background:var(--accent-color);
+  border:none;
+  display: flex;
+  justify-content:center;
 }
 .close-button{
   position: absolute;
