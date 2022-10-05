@@ -532,10 +532,6 @@ color:var(--discription-text-color);
   margin: 0 auto;
   padding: 0 15px;
 }
-/*.icon-partners:hover svg,
-.icon-partners:focus svg {
-  color: var(--accent-color);
-}*/
 
 .icon-partners:hover svg,
 .icon-partners:focus svg {
@@ -651,7 +647,7 @@ background-color: var(--background-color-dark);
 
 }
 .mail-input::placeholder{
-  font-weight: 400;
+font-weight: 400;
 font-size: 16px;
 line-height: 1.25;
 
@@ -659,12 +655,12 @@ display: flex;
 align-items: center;
 
 color: rgba(255, 255, 255, 0.6);
+outline: none;
 
 }
 .btn-footer{
-  margin-left: 12px ;
-  width: 200px;
-  
+margin-left: 12px ;
+width: 200px;
 
 font-weight: 700;
 font-size: 16px;
@@ -681,6 +677,11 @@ border: none;
 cursor: pointer;
 
 }
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: var(--button-color-active);
+  color: var(--discription-text-color);
+  cursor: pointer;}
 
 /*modal*/
 
@@ -709,7 +710,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .modal-title{
-  text-align: center;
+text-align: center;
 font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
@@ -730,6 +731,16 @@ textarea{
 }
 textarea:focus{
   border: 1px solid var(--accent-color);
+}
+textarea::placeholder{
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.66;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+
 }
 .btn-submit{
 margin-left:165px;
@@ -788,9 +799,8 @@ color: var(--accent-color);
   left: 12px;
   transform:translateY(-50%);
 }
-.btn-footer svg {
 
-}
+
 .form-element svg{
   fill: var(--primary-text-color);
 }
@@ -853,6 +863,12 @@ color: #757575;
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #212121;
 }
+.close-button:hover ,
+.close-button:focus{
+  fill: var(--accent-color);
+  }
+
 
 
