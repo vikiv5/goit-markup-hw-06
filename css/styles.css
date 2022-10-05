@@ -670,11 +670,12 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 
-background: var(--button-color-active);
+background: var(--accent-color);
 color: var(--discription-text-color);
 border-radius: 4px;
 border: none;
 cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .btn-footer:hover,
@@ -728,6 +729,7 @@ textarea{
   padding: 12px 16px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 textarea:focus{
   border: 1px solid var(--accent-color);
@@ -748,7 +750,7 @@ margin-right:163px;
 padding: 10px 52px;
 width: 200px;
 height: 50px;
-background: var(--button-color-active);
+background: var(--accent-color);
 color: var(--discription-text-color);
 border-radius: 4px;
 border: none;
@@ -764,10 +766,16 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: var(--button-color-active);
+  cursor: pointer;}
+
 .accept-link {
-  font-weight: 400;
+font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 text-decoration-line: underline;
@@ -820,6 +828,7 @@ color: var(--accent-color);
   display: flex;
   align-items: center;
   margin-right: 7px;
+  border-radius: 4px;
 }
 .accept label{
   display: flex;
@@ -858,12 +867,13 @@ color: #757575;
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color:var(--discription-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1) ;
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover ,
 .close-button:focus{
