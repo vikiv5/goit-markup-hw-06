@@ -646,6 +646,7 @@ color: rgba(255, 255, 255, 0.6);
 outline: none;
 
 }
+
 .mail-box{
   display: flex;
 }
@@ -760,8 +761,7 @@ color: rgba(117, 117, 117, 0.5);
 }
 .btn-submit{
 margin-left:165px;
-margin-right:163px;
-padding: 10px 52px;
+
 width: 200px;
 height: 50px;
 background: var(--accent-color);
