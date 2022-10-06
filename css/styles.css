@@ -634,7 +634,7 @@ text-transform: uppercase;
 color: var(--discription-text-color);
 margin-bottom: 20px;
 }
-.mail-input{
+.mail-input {
 width: 358px;
 height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -642,7 +642,8 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 padding-left: 15px;
 background-color: var(--background-color-dark);
-
+color: rgba(255, 255, 255, 0.6);
+outline: none;
 
 }
 .mail-box{
@@ -657,9 +658,9 @@ display: flex;
 align-items: center;
 
 color: rgba(255, 255, 255, 0.6);
-outline: none;
 
 }
+
 .btn-footer{
 margin-left: 12px;
 width: 200px;
@@ -689,6 +690,7 @@ display: flex;
 }
 footer label{
   margin-top: 0;
+  margin-bottom: 0;
 }
 .btn-footer:hover,
 .btn-footer:focus {
@@ -850,6 +852,7 @@ color: var(--accent-color);
   display: flex;
   margin-bottom: 30px;
   margin-top: 20px;
+  align-items: center;
 }
 .accept-text{
 height: 24px;
@@ -864,7 +867,7 @@ margin-bottom: 4px;
 margin-top:10px;
 font-weight: 400;
 font-size: 12px;
-line-height: 1.66;
+line-height: 1.25;
 letter-spacing: 0.01em;
 color: #757575;
 

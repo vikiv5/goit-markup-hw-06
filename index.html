@@ -626,7 +626,12 @@
             <label for="name">Ім'я</label>
 
             <div class="input-wrap">
-              <input type="text" name="name" id="name" placeholder=" " />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
               <svg
                 class="icon-person"
                 viewBox="0 0 32 32"
@@ -640,7 +645,7 @@
           <div class="form-element">
             <label for="tel">Телефон</label>
             <div class="input-wrap">
-              <input type="tel" name="tel" id="tel" placeholder=" " />
+              <input type="tel" name="tel" id="tel" required />
               <svg
                 class="icon-phone-black"
                 viewBox="0 0 32 32"
@@ -654,7 +659,12 @@
           <div class="form-element">
             <label for="email">Пошта</label>
             <div class="input-wrap">
-              <input type="email" name="email" id="email" placeholder=" " />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
               <svg
                 class="icon-email-black"
                 viewBox="0 0 32 32"
@@ -692,15 +702,14 @@
                   <use href="./img/sprite partners.svg#icon-tick"></use>
                 </svg>
               </span>
-              <p class="accept-text">
+              <b class="accept-text">
                 Погоджуюся з розсилкою та приймаю
                 <span>
                   <a class="accept-link link" href="#">Умови договору</a></span
                 >
-              </p>
+              </b>
             </label>
           </div>
-
 
           <button type="submit" class="btn-submit">Відправити</button>
         </form>
